@@ -20,7 +20,7 @@ auto\_shindanmaker - 診断メーカー自動投稿プラグイン
     
     # or
 
-    $ cd ~/.mikutter/plugin/auto_shindanmaker && gem install nokogiri mechanize
+    $ gem install nokogiri mechanize
 
 # SEE ALSO
 
