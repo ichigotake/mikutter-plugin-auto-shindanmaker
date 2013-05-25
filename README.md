@@ -24,7 +24,9 @@ auto\_shindanmaker - 診断メーカー自動投稿プラグイン
 
 # SEE ALSO
 
-http://mikutter.hachune.net/
+[mikutter](http://mikutter.hachune.net/)
+
+[診断メーカー自動投稿プラグイン作ったとこ #mikutter - diary ichigotake](http://ichigotake.hateblo.jp/entry/2013/05/25/100417)
 
 # AUTHOR
 
