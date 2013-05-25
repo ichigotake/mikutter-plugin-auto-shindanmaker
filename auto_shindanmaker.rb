@@ -12,11 +12,16 @@ Plugin.create(:auto_shindanmaker) do
 
   def expand_url(url)
       return if url.empty?
-      uri = url.kind_of?(URI) ? url : URI.parse(url)
-      Net::HTTP.start(uri.host, uri.port) { |io|
-          r = io.head(uri.path)
-          r['Location'] || uri.to_s
-      }
+
+      begin
+        uri = url.kind_of?(URI) ? url : URI.parse(url)
+        Net::HTTP.start(uri.host, uri.port) { |io|
+            r = io.head(uri.path)
+            r['Location'] || uri.to_s
+        }
+      rescue
+        return url
+      end
   end
 
   filter_update do |service, msgs|
