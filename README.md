@@ -14,6 +14,14 @@ auto\_shindanmaker - 診断メーカー自動投稿プラグイン
 
     $ git clone https://github.com/ichigotake/mikutter-plugin-auto-shindanmaker ~/.mikutter/plugin/auto_shindanmaker
 
+このプラグインは *mechanize* と *nokogiri* を利用しているので、依存モジュールをインストールする
+
+    $ cd ~/.mikutter/plugin/auto_shindanmaker && bundle install
+    
+    # or
+
+    $ cd ~/.mikutter/plugin/auto_shindanmaker && gem install nokogiri mechanize
+
 # SEE ALSO
 
 http://mikutter.hachune.net/
