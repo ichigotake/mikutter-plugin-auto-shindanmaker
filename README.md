@@ -32,3 +32,7 @@ auto\_shindanmaker - 診断メーカー自動投稿プラグイン
 
 [@ichigotake](https://twitter.com/ichigotake)
 
+# LICENSE
+
+[MIT LICENSE](http://opensource.org/licenses/MIT)
+
