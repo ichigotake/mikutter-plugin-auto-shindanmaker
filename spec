@@ -4,7 +4,7 @@ depends:
   mikutter: 0.2.1.1120
   plugin: 
   - command
-version: '1.1'
+version: '1.2'
 author: ichigotake
 name: 診断メーカー自動投稿プラグイン
 description: タイムラインに流れて来た診断メーカーを自動で投稿します
