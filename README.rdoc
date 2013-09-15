@@ -16,10 +16,6 @@
 
 このプラグインは *mechanize* と *nokogiri* を利用しているので、依存モジュールをインストールする
 
-    $ cd ~/.mikutter/plugin/auto_shindanmaker && bundle install
-    
-    # or
-
     $ gem install nokogiri mechanize
 
 == See also
