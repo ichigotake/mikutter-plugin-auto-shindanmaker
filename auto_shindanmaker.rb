@@ -35,21 +35,29 @@ Plugin.create(:auto_shindanmaker) do
         next unless uri =~ /^http:\/\/shindanmaker\.com\/[0-9]+$/
 
         agent = Mechanize.new
-        agent.get(uri) do |page|
-          result = page.form_with(:id => 'form') do|search|
-            search.u = Service.primary.user_obj
-          end.submit
+        begin
+          agent.get(uri) do |page|
+            result = page.form_with(:id => 'form') do|search|
+              search.u = Service.primary.user_obj
+            end.submit
 
-          title = result.title
+            title = result.title
 
-          post_body = result.root.search('meta[property="me2:post_body"]')
+            post_body = result.root.search('meta[property="me2:post_body"]')
 
-          result_body = ''
-          post_body.each do|node|
-            result_body = node.attributes['content'].value 
+            result_body = ''
+            post_body.each do|node|
+              result_body = node.attributes['content'].value 
+            end
+  
+            Plugin.activity :system, " - " + title + " : " + uri + "\n" + result_body
           end
-
-          Plugin.activity :system, " - " + title + " : " + uri + "\n" + result_body
+        rescue Timeout::Error
+          retry
+        rescue
+          Plugin.activity :system,
+            "診断メーカーへの接続に失敗しました。\n" +
+            uri
         end
       end
     }
