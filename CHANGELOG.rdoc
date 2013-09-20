@@ -1,4 +1,7 @@
 
+v 1.4
+  - update: copyright
+
 v 1.3
   - update: document
   - bugfix: crash on connection failed #3
