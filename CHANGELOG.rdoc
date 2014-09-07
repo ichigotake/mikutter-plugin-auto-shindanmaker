@@ -1,5 +1,7 @@
 
 v 1.5
+  - notice: 時期バージョンから mikutter 2.0 をサポートしない予定 (`spec`ファイルを削除)
+  - update: mikutter 3.0 をサポート (`.mikutter.yml`を追加)
   - bugfix: 診断結果が表示されない
 
 v 1.4
