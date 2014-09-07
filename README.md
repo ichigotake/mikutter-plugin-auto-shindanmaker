@@ -1,14 +1,14 @@
-= auto_shindanmaker 
+# auto_shindanmaker 
 
-- 診断メーカー自動投稿プラグイン
+診断メーカー自動投稿プラグイン
 
-== Description
+## Description
 
 タイムラインに流れて来た診断メーカーを、自分のIDで診断したものを自動投稿します
 
 診断結果はmikutterのシステムメッセージとしてタイムラインに流すので、他の人から見てTLを汚す事もありません
 
-== Install
+## Install
 
 プラグインディレクトリに *auto\_shindanmaker/* というディレクトリ名でダウンロードします
 
@@ -18,17 +18,17 @@
 
     $ gem install nokogiri mechanize
 
-== See also
+## See also
 
-{mikutter}[http://mikutter.hachune.net/]
+- [mikutter](http://mikutter.hachune.net/)
 
-{診断メーカー自動投稿プラグイン作ったとこ #mikutter - diary ichigotake}[http://ichigotake.hateblo.jp/entry/2013/05/25/100417]
+- [診断メーカー自動投稿プラグイン作ったとこ #mikutter - diary ichigotake](http://ichigotake.hateblo.jp/entry/2013/05/25/100417)
 
-== Author
+## Author
 
-{ichigotake}[https://twitter.com/ichigotake]
+[chigotake](https://twitter.com/ichigotake)
 
-== License
+## License
 
-{MIT LICENSE}[http://opensource.org/licenses/MIT]
+[MIT LICENSE](LICENSE)
 
