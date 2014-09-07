@@ -1,4 +1,7 @@
 
+v 1.5
+  - bugfix: 診断結果が表示されない
+
 v 1.4
   - update: copyright
 

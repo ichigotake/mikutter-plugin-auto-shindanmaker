@@ -43,11 +43,11 @@ Plugin.create(:auto_shindanmaker) do
 
             title = result.title
 
-            post_body = result.root.search('meta[property="me2:post_body"]')
+            post_body = result.root.search('.main1 .main2 .result')
 
             result_body = ''
             post_body.each do|node|
-              result_body = node.attributes['content'].value 
+              result_body = node.text.strip
             end
   
             Plugin.activity :system, " - " + title + " : " + uri + "\n" + result_body
