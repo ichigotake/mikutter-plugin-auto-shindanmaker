@@ -50,7 +50,7 @@ Plugin.create(:auto_shindanmaker) do
               result_body = node.text.strip
             end
   
-            Plugin.activity :system, " - " + title + " : " + uri + "\n" + result_body
+            Plugin.activity :system, title + "  " + uri + "\n" + result_body
           end
         rescue Timeout::Error
           retry
