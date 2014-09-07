@@ -18,6 +18,10 @@
 
     $ gem install nokogiri mechanize
 
+## Changelog
+
+[CHANGELOG.md](CHANGELOG.md)
+
 ## See also
 
 - [mikutter](http://mikutter.hachune.net/)
@@ -26,7 +30,7 @@
 
 ## Author
 
-[chigotake](https://twitter.com/ichigotake)
+[ichigotake](https://twitter.com/ichigotake)
 
 ## License
 
